@@ -11,7 +11,7 @@ SWIFT_FLAGS_RELEASE=$(patsubst --configuration=%,--configuration=release,$(SWIFT
 PROTOC_GEN_SWIFT=${SWIFT_BUILD_PATH}/release/protoc-gen-swift
 PROTOC_GEN_GRPC_SWIFT=${SWIFT_BUILD_PATH}/release/protoc-gen-grpc-swift
 
-SWIFT_BUILD:=${SWIFT} build ${SWIFT_FLAGS}
+SWIFT_BUILD:=${SWIFT} build --help
 SWIFT_BUILD_RELEASE:=${SWIFT} build ${SWIFT_FLAGS_RELEASE}
 SWIFT_TEST:=${SWIFT} test ${SWIFT_FLAGS}
 SWIFT_PACKAGE:=${SWIFT} package ${SWIFT_FLAGS}
